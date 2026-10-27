@@ -1,0 +1,32 @@
+Assesment:
+
+Task Manager:
+
+MERN -> Mongodb, Express.js, React.js & Node.js
+We have two role: admin, employee
+
+We created Uses
+Admin Create task, employee can update task
+Task Status are: pending, completed, in-progress, on-hold
+Admin can see all task and can update status of task, employee access only their task.
+
+Prompt:
+Act as a seniour software engineer to build an applciation for the task Manager and the tech stack is MERN.
+follow all the best practices and also follow the clean code principles.
+For the backend system use only plain JavaScript and for the frontend system use React.js.
+Use Modular programming approach for the code structure.
+
+
+Task:
+1. Admin can create task for the employee.
+2. Admin can update task for the employee.
+3. Employee can update status add description
+4. Admin can see all task and can update status of task, employee access only their task.
+
+In system ther are only two roles admin and employee. By default admin can access all the functionality 
+Admin Create an employee profile including name, email
+Admin assing the task to employee.
+We don't use mailer system, we use OTP and currently OTP show in console/terminal screen after login.
+We don't implement Forgot / Reset Password functionality
+
+**Note We create First API level functionality after that we implement in React UI.
