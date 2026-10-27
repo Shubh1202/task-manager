@@ -5,10 +5,7 @@ const morgan = require('morgan');
 
 const connectDB = require('./src/config/db');
 const seedDefaultAdmin = require('./src/utils/seedAdmin');
-
-const authRoutes = require('./src/routes/authRoutes');
-const userRoutes = require('./src/routes/userRoutes');
-const taskRoutes = require('./src/routes/taskRoutes');
+const apiRoutes = require('./src/routes/index');
 const { notFound, errorHandler } = require('./src/middleware/errorMiddleware');
 
 const app = express();
@@ -32,10 +29,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// API Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/tasks', taskRoutes);
+app.use('/api', apiRoutes);
+
 
 // Error Handling Middlewares
 app.use(notFound);
